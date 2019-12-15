@@ -1,0 +1,281 @@
+
+body{
+  font-family: arial;
+}
+ul{
+  list-style-type: none;
+  overflow: hidden;
+}
+li{
+  float: left;
+  display: block;
+  text-align: center;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+a{
+  text-decoration: none;
+  color: white;
+  line-height: 30px;
+}
+.textcon {
+  text-align: center;
+  margin: 10px auto;
+}
+.textcon *{
+  padding: 5px 0px 5px 0px;
+}
+.imgcon{
+  margin: auto;
+  padding-left: 33%;
+  padding-right: 33%;
+}
+.inblock{
+  display: inline-block;
+}
+
+i{
+  font-size: 30px;
+}
+header{
+  background-image: url("../img/headerbg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 65vh;
+}
+#opaco{
+  background-color: rgba(24, 24, 24, 0.7);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 65vh;
+  color: white;
+}
+#navmenu2{
+  display: none;
+  color: white;
+  font-size: 20px;
+}
+
+#dropdown{
+  display: none;
+}
+#opaco .container .row .col-lg-6 li{
+  float: right;
+}
+
+#opaco .row:nth-child(2){
+  margin: 10% auto;
+  text-align: center;
+}
+#opaco .row:nth-child(2) p{
+  padding: 10px;
+}
+#first .col-lg-6{
+  background-color: #FAFAFA;
+}
+
+#first a{
+  color: blue;
+}
+#first img{
+  width: 40%;
+}
+#second{
+  background-image: url("../img/HelbizBanner.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: 0% 0%;
+  height: auto;
+}
+#second img{
+  margin-left: 15%;
+  margin-right: 15%;
+  width: 70%;
+}
+#second .row{
+  padding-top: 10%;
+}
+#second .col-lg-4.left, .col-lg-4.right{
+  padding-top: 25%;
+
+}
+#second .textcon.1{
+  text-align: right;
+  bottom: 0;
+}
+#second .textcon.2{
+  text-align: left;
+  bottom: 0;
+}
+#third{
+  padding-left: 2.5%;
+  padding-right: 2.5%;
+  color: white;
+}
+#third > .container{
+  background-image: url("../img/ScooterHelbiz-2400.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 0% 0%;
+  /* height: 50vh; */
+  position: relative;
+}
+
+#third .container .textcon{
+  padding: 20% 5% 20% 5%;
+  margin: auto;
+}
+#fourth .container .row .col-lg-6 .container{
+  background-image: url("../img/helbiZAPP.png");
+  background-size: 45%;
+  background-repeat: no-repeat;
+  background-position: 50% 100%;
+  background-color: #374859;
+  /* height: 60vh; */
+  color: white;
+  padding-top: 3%;
+}
+#fourth .container .row .col-lg-6 .container.b{
+  background-image: url("../img/Cities-1500.jpg");
+  background-size: cover;
+}
+
+#fourth .textcon{
+  height: 300px;
+}
+#fifth{
+  /* height: 50vh; */
+  background-image: url("../img/Social-Banner.jpg");
+  background-size: cover;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  margin-bottom: 2%;
+}
+#fifth .textcon{
+  max-width: 30%;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  padding-left: 0;
+  padding-right: 0;
+  margin: auto;
+  color: black;
+  background-color: white;
+  text-align: center;
+  margin: auto;
+}
+#fifth .textcon  a{
+  color: black;
+  padding: 5px;
+}
+footer{
+  background-color: black;
+  padding: 30px 10% 10px 10%;
+}
+footer .container{
+  height: 100%;
+  color: white;
+}
+footer .container h4{
+  padding-bottom: 10px;
+}
+footer .container li{
+  text-align: left;
+  padding: 5px 0 5px;
+  float: none;
+}
+footer .container li a{
+  color: gray;
+}
+footer .container img{
+  width: 50%;
+}
+footer .container .row.c .container{
+  max-width: 25%;
+  margin:auto;
+}
+footer .container .row.c img{
+  width: 49%;
+}
+
+footer .container .row{
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+@media all and (min-width:768px) and (max-width:991px) {
+  #opaco #navmenu1 {
+     display: none;
+  }
+  #opaco #navmenu2 {
+     display: block;
+  }
+  #opaco #navmenu2:hover {
+    cursor: pointer;
+  }
+  #opaco #navmenu2:hover #dropdown {
+    display: block;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    z-index: 2;
+    background-color: rgb(64, 64, 65)
+  }
+
+  #opaco #navmenu2:hover #dropdown li{
+    float: none;
+  }
+  #opaco .container .button img{
+    width: 40%;
+  }
+
+  #second .container img{
+    width: 70%;
+  }
+
+  #third .container .textcon{
+    margin: auto;
+  }
+
+  #fourth .container .row .col-lg-6 .container{
+    background-size: 30%;
+  }
+
+}
+@media all and (max-width:767px) {
+  #opaco #navmenu1 {
+     display: none;
+  }
+  #opaco #navmenu2 {
+     display: block;
+  }
+
+  #opaco #navmenu2:hover {
+    cursor: pointer;
+  }
+  #opaco #navmenu2:hover #dropdown {
+    display: block;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    z-index: 2;
+    background-color: rgb(64, 64, 65)
+  }
+  #opaco #navmenu2:hover #dropdown li{
+    float: none;
+  }
+  #opaco .container .button img{
+    width: 40%;
+  }
+  #second .container img{
+    width: 40%;
+    display: none;
+  }
+  #second .container .col-xs-12{
+    padding: 0;
+  }
+  #fourth .container .row .col-lg-6   .container{
+    background-size: 40%;
+  }
+
+}
